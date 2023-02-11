@@ -1,0 +1,42 @@
+h3{
+    text-align: center;
+    
+}
+h4{
+    text-align: center;
+}
+div[class="1"]{column-width: 300px;column-gap: 1.5em;} /*column:solid green 5px*/
+h4[class="1"]{color:rgb(98, 98, 98)}
+h6[class="1"]{background-color: rgb(255, 255, 255);}
+
+#container{width:100%; height:1000px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+nav{width:100%;height:50px;
+    background-color:rgba(198, 198, 198, 0.496);color:rgb(59, 56, 56)
+}
+
+section{width:100%;text-align: center;
+    background-color:rgba(255, 255, 255, 0.262);color:rgb(47, 47, 47)
+}
+
+article{width:50%;
+    background-color:rgb(255, 255, 255);border-right-style:solid;border-color: rgb(225, 228, 225)
+}
+aside{width:50%; 
+    background-color: rgb(255, 255, 255);
+}
+footer{width:100%; height:40px;
+    background-color: rgb(71, 71, 71);
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  blockquote{
+    color: #000;
+  }

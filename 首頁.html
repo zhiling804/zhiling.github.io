@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>減肥POCK</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <style>
+      @import url(abc.css); /*響應式下拉菜單*/
+      @import url(a.css);/*幻燈片.輪播*/
+    img[class="1"]{
+        filter: drop-shadow(0px  rgba(0, 0, 0, 0.7))
+     }
+    img:hover[class="1"] {
+     filter: drop-shadow(5px 5px 3px rgba(146, 144, 144, 0.7)) ;
+     }
+    </style>
+  </head>
+
+  <body>
+  
+    <header>
+
+      <div class="topnav" id="myTopnav">
+        <a href="首頁.html" class="active" target="_self">PCOK</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">運動 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="間歇運動Tabata Hiit.html" target="_self">間歇運動Tabata/Hiit</a>
+            <a href="有氧運動.html">有氧運動</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">飲食
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="間歇性斷食.html">間接性斷食</a>
+            <a href="餐盤飲食法.html">餐盤飲食法</a>
+            
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">習慣 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="生活習慣.html">生活習慣</a>
+            <a href="飲食習慣.html">飲食習慣</a>
+          </div>
+        
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Q&A
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="QA.html">解答你的疑惑</a>
+          </div>
+          
+        </div> 
+        
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+     
+    </header>
+<br>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="sports.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="food2.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="food1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="habit.jpg" style="width:100%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+<hr>
+<div class="row column text-center">
+  <h3><b>最新消息</b></h3>
+</div>
+<hr>
+  <div class="column" >
+    <img src="megaphone.png" alt="image for article" width="85px" ><h3 class="1">：今天會更新Q&A內容!!</h3>
+  </div>
+
+  <div class="column"><br>
+    <a href="#新聞"><img  class="1" src="news.png" alt="image for article" width="85px"></a><h3 class="1">：今日新聞</h3>
+  </div>
+</div>
+
+<hr>
+
+<div class="row column">
+  <h3 style="margin: 0;" class="text-center"><b>專家建議</b></h3>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="large-8 columns" style="border-right: 1px solid #E3E5E8;">
+
+  <article>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="d3.jpg" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="https://heho.com.tw/archives/215592">營養師劉思妤</a></h5>
+       
+        <p>
+          <ol>一、只吃食物最原始的樣貌</ol>
+          <ol>二、蔬菜是主菜 不是配菜</ol>
+          <ol>三、不要怕吃油 要吃好油</ol>
+          <ol>四、定時定量吃飯</ol>
+          <ol>五、好好享受食物帶來的快樂</ol>
+
+          「減重還是要回到飲食根本，營養師從來不鼓勵大家餓一輩子，過著永遠吃不飽的人生，或是看著眼前的美食卻碰不得，只要做到這 5 個瘦身關鍵偶爾也是可以放縱一下享受美食！」
+
+        
+         </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="d2.jpg" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="https://www.peeta.tw/nutrition/diet-menu/">營養師邱柏元</a></h5>
+        <p>我的減肥菜單設計原則
+          基本上我的減肥菜單都脫離不了以下幾點，當然這些可能不適合目標是想要快速減脂的人，但這些是可以是想要維持體重或緩慢快樂的減肥的朋友遵從的方式。
+          
+           <ol>一、減少精製醣類 → 減少血糖飆升與避免胰島素濃度上升太快。</ol>
+           <ol>二、減少不該吃的東西，選擇營養密度高的食物。</ol>
+           <ol>三、攝取多樣蔬菜與少量水果。</ol>
+           <ol>四、適量健康油脂。</ol>
+           「減肥菜單不是絕對的： 
+
+          減肥方式百百種，網路上提供的不一定是最適合妳的。有研究是同時低熱量飲食的情況下，高碳水晚餐的減肥效果更勝分散在三餐的。」 </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="d.jpg" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="https://www.vogue.com.tw/beauty/article/%E6%B8%9B%E8%82%A5-%E6%B8%9B%E9%86%A3%E9%A3%B2%E9%A3%9F-%E6%B8%9B%E9%86%A3%E8%8F%9C%E5%96%AE%E5%A4%96%E9%A3%9F">營養師趙函穎</a></h5>
+        <p>
+          <ol>第一步：執行無加糖飲食。</ol>
+          <ol>第二步：不吃甜點零食</ol>
+          <ol>第三步：減少白色澱粉的攝取。</ol>
+          <ol>第四步：增加蔬菜食用量。</ol>
+          <ol>第五步：適度增加優質蛋白質的攝取。</ol>
+
+          「瘦身不以降低減輕體重為目的，而是在於看見自己的進步。 
+
+          當然，別忘了搭配適合自己強度的運度，充足的睡眠作息，健康愛自己的心態，這些都在瘦身成功關鍵的一環，尤其心態的調整很重要。」 </p>
+      </div>
+    </div>
+
+    <hr>
+
+
+    </article>
+
+  </div>
+
+  
+
+     
+      <div class="row column">
+      
+
+        <div class="media-object">
+          <div class="media-object-section">
+            <img src="warning.png" width="35">
+          </div>
+          <div class="media-object-section">
+            <h5>此網站純屬幫忙統整各減肥資料，請大家參考為主，過度操作造成身體損傷，不負責任。</h5>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <div class="media-object-section">
+            <img src="bell.png" width="35">
+          </div>
+          <div class="media-object-section">
+            <h5>服務時間：週一至週五 9:00~17:30</h5>
+          </div>
+        </div>
+
+        <div class="media-object">
+          <div class="media-object-section">
+            <img src="phone-call.png"  width="35">
+          </div>
+          <div class="media-object-section">
+            <h5>有任何問題可以撥打客服"0800-080123" 或是 email:nina93322@gmail.com</h5>
+          </div>
+
+          <div class="media-object">
+            <div class="media-object-section">
+              <a href="https://www.facebook.com/"><img src="facebook.png" width="35"></a>
+            </div>
+            <div class="media-object-section">
+              <a href="https://www.facebook.com/" style="color:black ;"><h5>facebook</h5></a>
+            </div>
+            
+          </div>
+          <div class="media-object">
+            <div class="media-object-section">
+              <a href="https://www.facebook.com/"><img src="instagram.png" width="35"></a>
+            </div>
+            <div class="media-object-section">
+              <a href="https://www.facebook.com/" style="color:black ;"><h5>instagram</h5></a>
+            </div>
+          </div>
+  
+          <div class="media-object">
+            <div class="media-object-section">
+              <a href="https://www.facebook.com/"><img src="line.png" width="35"></a>
+            </div>
+            <div class="media-object-section">
+              <a href="https://www.facebook.com/" style="color:black ;"><h5>line</h5></a>
+            </div>
+          </div>
+  
+          <div class="media-object">
+            <div class="media-object-section">
+              <a href="https://www.facebook.com/"><img src="youtube.png"  width="35"></a>
+            </div>
+            <div class="media-object-section">
+              <a href="https://www.facebook.com/" style="color:black ;"><h5>youtube</h5></a>
+            </div>
+        </div>
+
+
+    </aside>
+
+  </div>
+</div>
+<div class="box"></div>
+  <div class="row expanded callout secondary">
+    <div class="large-4 columns">
+      <h5>追蹤PCOK</h5>
+      <a href="https://www.facebook.com/" style="color:rgb(0, 0, 0);"><img src="facebook.png" width="20">facebook</a>
+      <a href="https://www.facebook.com/" style="color:rgb(0, 0, 0);"><img src="instagram.png" width="20">instagram</a>
+      <a href="https://www.facebook.com/" style="color:rgb(0, 0, 0);"><img src="line.png" width="20">line</a>
+      <a href="https://www.facebook.com/" style="color:rgb(0, 0, 0);"><img src="youtube.png" width="20">youtube</a>
+
+    </div>
+
+   
+ 
+
+</footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <a href="#">
+      <img src="arrow.png" style="width:60px; z-index: 100px; position: fixed; right: 10px; bottom: 10px;" alt="回頂端" title="點我回到上方">
+    </a>
+  </body>
+</html>

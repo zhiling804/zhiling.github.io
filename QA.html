@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>QA</title>
+    </head>
+    <style>
+  @import url(abc.css);
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgba(198, 198, 198, 0.496);  
+}
+
+li {
+  float: left;
+  color: black;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: rgb(11, 9, 9);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(198, 198, 198, 0.496);   
+}
+
+li.dropdown {
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;         
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}   
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    </style>
+  </head>
+
+  <body>
+  
+    <header>
+
+      <div class="topnav" id="myTopnav">
+        <a href="首頁.html" class="active" target="_self">Home</a>
+  
+        <div class="dropdown">
+          <button class="dropbtn">運動
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="間歇運動Tabata Hiit.html" target="_self">間歇運動Tabata/Hiit</a>
+            <a href="有氧運動.html">有氧運動</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">飲食
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="間歇性斷食.html">間歇性斷食</a>
+            <a href="餐盤飲食法.html">餐盤飲食法</a>
+  
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">習慣
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="生活習慣.html">生活習慣</a>
+            <a href="飲食習慣.html">飲食習慣</a>
+          </div>
+  
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Q&A
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="QA.html">解答你的疑惑</a>
+          </div>
+  
+        </div>
+  
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+  
+    </header>
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" style="color: black;">如何抵住食物誘惑 ?</a>
+        <div class="dropdown-content">
+          <a href="#">吃飽睡飽、分散注意力、喝水、看熱量、增加取得零食的不便</a>
+    
+        </div>
+      </li>
+    </ul>
+    <pre></pre>
+    <br>
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" style="color: black;">如何戒飲料 ?</a>
+        <div class="dropdown-content">
+          <a href="#">可以先從喝無糖不加料、大杯改中杯循序漸進</a>
+
+        </div>
+      </li>
+    </ul>
+    <pre></pre>
+  <br>
+
+  <ul>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" style="color: black;">如何改善梨形身材 ？</a>
+      <div class="dropdown-content">
+        <a href="#">可以試試跪姿屈膝側抬腿、側臥蚌式開合、 平板提臀、墊腳＋臀橋、側臥單腿畫圓</a>
+  
+      </div>
+    </li>
+  </ul>
+  <pre></pre>
+<br>
+
+    <ul>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn" style="color: black;">減肥後為甚麼會復胖 ？</a>
+          <div class="dropdown-content">
+            <a href="#">營養攝取的不均衡與不足所造成人體免疫力、基礎代謝率下降</a>
+      
+          </div>
+        </li>
+      </ul>
+      <pre></pre>
+      <br> 
+
+
+      <ul>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn" style="color: black;">如何才能不復胖 ？</a>
+          <div class="dropdown-content">
+            <a href="#">除了均衡飲食的控制與調整之外，還要培養固定運動習慣</a>
+      
+          </div>
+        </li>
+      </ul>
+      <pre></pre>
+      <br> 
+
+    <ul>
+    
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn" style="color: black;">想減肥卻沒動力 ？</a>
+          <div class="dropdown-content">
+            <a href="#">選擇你所喜愛的運動、揪團運動、把運動時間分散、降低運動阻力</a>
+      
+          </div>
+        </li>
+        
+    </ul>
+    <pre></pre>
+    <br> 
+
+      <ul>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn" style="color: black;">如何持之以恆 ？</a>
+          <div class="dropdown-content">
+            <a href="#">
+              可先從一星期就能完成的減肥法開始，有效果之後就持續挑戰</a>
+      
+          </div>
+        </li>
+      </ul>
+      <pre></pre>
+    <br>
+
+    <ul>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" style="color: black;">遇到停滯期怎麼辦 ？ </a>
+        <div class="dropdown-content">
+          <a href="#">要讓你的代謝、讓身體適應停下來的體重，休息大概一到兩週後你再繼續你原本的做法，這樣子往往就能打破你的減肥停滯期</a>
+    
+        </div>
+      </li>
+    </ul>
+    <pre></pre>
+  <br>
+
+  <ul>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn" style="color: black;">停滯期會持續多久 ？ </a>
+      <div class="dropdown-content">
+        <a href="#">個人的情況不同，短的可能一週、長的也可能一個月不等，重點是你遇到減肥停滯期後怎麼做</a>
+  
+      </div>
+    </li>
+  </ul>
+  <pre></pre>
+<br>
+    
+<ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="color: black;">每天吃兩餐卻也瘦不下來 ？ </a>
+    <div class="dropdown-content">
+      <a href="#">NG行為: 完全不吃澱粉、少量多餐、把水果當正餐、不吃青菜、起床後兩小時內不進食</a>
+
+    </div>
+  </li>
+</ul>
+<pre></pre>
+<br>
+
+  </body>
+</html>
